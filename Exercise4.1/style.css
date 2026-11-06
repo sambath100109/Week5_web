@@ -1,0 +1,28 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.small{
+    font-size: 30px;
+    background-color: orangered;
+    display: none;
+}
+.big{
+    font-size: 50px;
+    background-color: greenyellow;
+}
+@media(max-width: 768px){
+    .small{
+        display: block;
+    }
+    .big{
+        display: none;
+    }
+}
